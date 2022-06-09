@@ -8,14 +8,17 @@
   <WorkspaceName>WorkSpace</WorkspaceName>
 
   <project>
-    <PathAndName>.\UART-driver\uart-driver.uvprojx</PathAndName>
+    <PathAndName>.\embedded-oop\embedded-oop.uvprojx</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\gpio-scratch\gpio-scratch.uvprojx</PathAndName>
+    <NodeIsActive>1</NodeIsActive>
     <NodeIsExpanded>1</NodeIsExpanded>
   </project>
 
   <project>
-    <PathAndName>.\embedded-oop\embedded-oop.uvprojx</PathAndName>
-    <NodeIsActive>1</NodeIsActive>
-    <NodeIsExpanded>1</NodeIsExpanded>
+    <PathAndName>.\UART-driver\uart-driver.uvprojx</PathAndName>
   </project>
 
 </ProjectWorkspace>

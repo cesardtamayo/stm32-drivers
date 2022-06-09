@@ -17,14 +17,12 @@ int main(void){
 	USART2_Init();
 		
 	printf("Hello there from main() :) ");
-	while(1){
-		// test_setup();
-	}
+
 		
 	
 	
 	
-	/*
+	
 	RCC->AHBENR |= (1<<18);
 	GPIOB->MODER |= (1<<26);
 	
@@ -34,6 +32,6 @@ int main(void){
 		}
 		GPIOB->ODR ^= (1<<13);
 	}
-	*/
+	
 
 }

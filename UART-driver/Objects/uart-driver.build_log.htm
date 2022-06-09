@@ -21,85 +21,86 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
 Dialog DLL:      TCM.DLL V1.56.1.0
  
 <h2>Project:</h2>
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\uart-driver.uvprojx
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart-driver.uvprojx
 Project File Date:  06/02/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.18', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Rebuild Project 'uart-driver' - Target 'stm32'
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\main.c(2): warning: In file included from...
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\uart.h(4): warning: In file included from...
-C:\Users\ctamayo\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h(128): warning: In file included from...
-C:\Users\ctamayo\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302x8.h(128): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
-  FPU_IRQn                    = 81,      /*!< Floating point Interrupt                                          */
-                                  ^~
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\main.c(2): warning: In file included from...
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\uart.h(12): warning: no newline at end of file [-Wnewline-eof]
-#endif
-      ^
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\main.c(21): warning: // comments are not allowed in this language [-Wcomment]
-                // test_setup();
-                ^
-3 warnings generated.
-compiling main.c...
 assembling startup_stm32f302x8.s...
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\uart.c(1): warning: In file included from...
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\uart.h(4): warning: In file included from...
-C:\Users\ctamayo\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h(128): warning: In file included from...
-C:\Users\ctamayo\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302x8.h(128): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
-  FPU_IRQn                    = 81,      /*!< Floating point Interrupt                                          */
-                                  ^~
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\uart.c(1): warning: In file included from...
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\uart.h(12): warning: no newline at end of file [-Wnewline-eof]
-#endif
-      ^
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\uart.c(33): warning: no previous prototype for function 'USART2_write' [-Wmissing-prototypes]
-int USART2_write(int ch){
-    ^
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\uart.c(33): note: declare 'static' if the function is not intended to be used outside of this translation unit
-int USART2_write(int ch){
-^
-static 
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\uart.c(42): warning: no previous prototype for function 'USART2_read' [-Wmissing-prototypes]
-int USART2_read(void){
-    ^
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\uart.c(42): note: declare 'static' if the function is not intended to be used outside of this translation unit
-int USART2_read(void){
-^
-static 
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\uart.c(49): warning: unused parameter 'f' [-Wunused-parameter]
-int fgetc(FILE *f){
-                ^
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\uart.c(64): warning: unused parameter 'f' [-Wunused-parameter]
-int fputc(int c, FILE *f){
-                       ^
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\uart.c(89): warning: // comments are not allowed in this language [-Wcomment]
-// struct __FILE { int handle; };
-^
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\uart.c(68): warning: no previous extern declaration for non-static variable 'n' [-Wmissing-variable-declarations]
-int n;
-    ^
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\uart.c(68): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-int n;
-^
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\uart.c(69): warning: no previous extern declaration for non-static variable 'str' [-Wmissing-variable-declarations]
-char str[80];
-     ^
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\uart.c(69): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-char str[80];
-^
-9 warnings generated.
-compiling uart.c...
-C:\Users\ctamayo\Projects\uVision\Embedded OOP class\UART-driver\RTE\Device\STM32F302R8Tx\system_stm32f3xx.c(70): warning: In file included from...
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\RTE\Device\STM32F302R8Tx\system_stm32f3xx.c(70): warning: In file included from...
 C:\Users\ctamayo\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h(128): warning: In file included from...
 C:\Users\ctamayo\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302x8.h(128): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
   FPU_IRQn                    = 81,      /*!< Floating point Interrupt                                          */
                                   ^~
 1 warning generated.
 compiling system_stm32f3xx.c...
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\main.c(2): warning: In file included from...
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.h(4): warning: In file included from...
+C:\Users\ctamayo\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h(128): warning: In file included from...
+C:\Users\ctamayo\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302x8.h(128): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+  FPU_IRQn                    = 81,      /*!< Floating point Interrupt                                          */
+                                  ^~
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\main.c(2): warning: In file included from...
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.h(12): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\main.c(30): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                for (int i=0; i<900000; i++){
+                     ^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\main.c(30): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+4 warnings generated.
+compiling main.c...
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.c(1): warning: In file included from...
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.h(4): warning: In file included from...
+C:\Users\ctamayo\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h(128): warning: In file included from...
+C:\Users\ctamayo\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302x8.h(128): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+  FPU_IRQn                    = 81,      /*!< Floating point Interrupt                                          */
+                                  ^~
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.c(1): warning: In file included from...
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.h(12): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.c(33): warning: no previous prototype for function 'USART2_write' [-Wmissing-prototypes]
+int USART2_write(int ch){
+    ^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.c(33): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int USART2_write(int ch){
+^
+static 
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.c(42): warning: no previous prototype for function 'USART2_read' [-Wmissing-prototypes]
+int USART2_read(void){
+    ^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.c(42): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int USART2_read(void){
+^
+static 
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.c(49): warning: unused parameter 'f' [-Wunused-parameter]
+int fgetc(FILE *f){
+                ^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.c(64): warning: unused parameter 'f' [-Wunused-parameter]
+int fputc(int c, FILE *f){
+                       ^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.c(89): warning: // comments are not allowed in this language [-Wcomment]
+// struct __FILE { int handle; };
+^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.c(68): warning: no previous extern declaration for non-static variable 'n' [-Wmissing-variable-declarations]
+int n;
+    ^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.c(68): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int n;
+^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.c(69): warning: no previous extern declaration for non-static variable 'str' [-Wmissing-variable-declarations]
+char str[80];
+     ^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.c(69): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char str[80];
+^
+9 warnings generated.
+compiling uart.c...
 linking...
-Program Size: Code=7092 RO-data=1004 RW-data=84 ZI-data=1632  
-".\Objects\uart-driver.axf" - 0 Error(s), 13 Warning(s).
+Program Size: Code=7172 RO-data=1004 RW-data=84 ZI-data=1632  
+".\Objects\uart-driver.axf" - 0 Error(s), 14 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -125,11 +126,11 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.6.0
 
    * Component: Keil.Standalone::Device:Startup:1.11.3
-      Source file:   Drivers/CMSIS/Device/ST/STM32F3xx/Source/Templates/arm/startup_stm32f302x8.s
       Source file:   Drivers/CMSIS/Device/ST/STM32F3xx/Source/Templates/system_stm32f3xx.c
-      Source file:   MDK/Device/Source/ARM/STM32F3xx_OPT.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F3xx/Source/Templates/arm/startup_stm32f302x8.s
       Include file:  Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h
-Build Time Elapsed:  00:00:01
+      Source file:   MDK/Device/Source/ARM/STM32F3xx_OPT.s
+Build Time Elapsed:  00:00:00
 </pre>
 </body>
 </html>
