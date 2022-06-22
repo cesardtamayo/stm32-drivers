@@ -27,14 +27,6 @@ Project File Date:  06/02/2022
 <h2>Output:</h2>
 *** Using Compiler 'V6.18', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Rebuild Project 'uart-driver' - Target 'stm32'
-assembling startup_stm32f302x8.s...
-C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\RTE\Device\STM32F302R8Tx\system_stm32f3xx.c(70): warning: In file included from...
-C:\Users\ctamayo\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h(128): warning: In file included from...
-C:\Users\ctamayo\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302x8.h(128): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
-  FPU_IRQn                    = 81,      /*!< Floating point Interrupt                                          */
-                                  ^~
-1 warning generated.
-compiling system_stm32f3xx.c...
 C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\main.c(2): warning: In file included from...
 C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.h(4): warning: In file included from...
 C:\Users\ctamayo\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h(128): warning: In file included from...
@@ -45,11 +37,7 @@ C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\main.c(2): warning: 
 C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.h(12): warning: no newline at end of file [-Wnewline-eof]
 #endif
       ^
-C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\main.c(30): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
-                for (int i=0; i<900000; i++){
-                     ^
-C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\main.c(30): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
-4 warnings generated.
+2 warnings generated.
 compiling main.c...
 C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.c(1): warning: In file included from...
 C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\uart.h(4): warning: In file included from...
@@ -98,9 +86,17 @@ char str[80];
 ^
 9 warnings generated.
 compiling uart.c...
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\UART-driver\RTE\Device\STM32F302R8Tx\system_stm32f3xx.c(70): warning: In file included from...
+C:\Users\ctamayo\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h(128): warning: In file included from...
+C:\Users\ctamayo\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302x8.h(128): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+  FPU_IRQn                    = 81,      /*!< Floating point Interrupt                                          */
+                                  ^~
+1 warning generated.
+compiling system_stm32f3xx.c...
+assembling startup_stm32f302x8.s...
 linking...
-Program Size: Code=7172 RO-data=1004 RW-data=84 ZI-data=1632  
-".\Objects\uart-driver.axf" - 0 Error(s), 14 Warning(s).
+Program Size: Code=14904 RO-data=1124 RW-data=84 ZI-data=1800  
+".\Objects\uart-driver.axf" - 0 Error(s), 12 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -127,10 +123,10 @@ Package Vendor: Keil
 
    * Component: Keil.Standalone::Device:Startup:1.11.3
       Source file:   Drivers/CMSIS/Device/ST/STM32F3xx/Source/Templates/system_stm32f3xx.c
-      Source file:   Drivers/CMSIS/Device/ST/STM32F3xx/Source/Templates/arm/startup_stm32f302x8.s
-      Include file:  Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h
       Source file:   MDK/Device/Source/ARM/STM32F3xx_OPT.s
-Build Time Elapsed:  00:00:00
+      Include file:  Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32F3xx/Source/Templates/arm/startup_stm32f302x8.s
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

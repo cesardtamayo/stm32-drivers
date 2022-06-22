@@ -1,0 +1,137 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Cesar Tamayo, home, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.37.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\uart-scratch.uvprojx
+Project File Date:  06/13/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild Project 'uart-scratch' - Target 'stm32'
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\gpio.c(1): warning: no newline at end of file [-Wnewline-eof]
+#include "gpio.h"
+                 ^
+1 warning generated.
+compiling gpio.c...
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\main.c(2): warning: In file included from...
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\uart.h(4): warning: // comments are not allowed in this language [-Wcomment]
+// #include <stdint.h>
+^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\uart.h(46): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\main.c(11): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+        int n;
+            ^
+3 warnings generated.
+compiling main.c...
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\uart.c(1): warning: In file included from...
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\uart.h(4): warning: // comments are not allowed in this language [-Wcomment]
+// #include <stdint.h>
+^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\uart.h(46): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\uart.c(33): warning: no previous prototype for function 'USART2_write' [-Wmissing-prototypes]
+int USART2_write(int ch){
+    ^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\uart.c(33): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int USART2_write(int ch){
+^
+static 
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\uart.c(46): warning: implicit conversion changes signedness: 'volatile uint32_t' (aka 'volatile unsigned int') to 'int' [-Wsign-conversion]
+        return USART2->RDR;
+        ~~~~~~ ~~~~~~~~^~~
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\uart.c(42): warning: no previous prototype for function 'USART2_read' [-Wmissing-prototypes]
+int USART2_read(void){
+    ^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\uart.c(42): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int USART2_read(void){
+^
+static 
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\uart.c(49): warning: unused parameter 'f' [-Wunused-parameter]
+int fgetc(FILE *f){
+                ^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\uart.c(64): warning: unused parameter 'f' [-Wunused-parameter]
+int fputc(int c, FILE *f){
+                       ^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\uart.c(89): warning: // comments are not allowed in this language [-Wcomment]
+// struct __FILE { int handle; };
+^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\uart.c(68): warning: no previous extern declaration for non-static variable 'n' [-Wmissing-variable-declarations]
+int n;
+    ^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\uart.c(68): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int n;
+^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\uart.c(69): warning: no previous extern declaration for non-static variable 'str' [-Wmissing-variable-declarations]
+char str[80];
+     ^
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\uart.c(69): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char str[80];
+^
+10 warnings generated.
+compiling uart.c...
+C:\Users\ctamayo\Projects\uVision\stm32-drivers\uart-scratch\RTE\Device\STM32F302R8Tx\system_stm32f3xx.c(70): warning: In file included from...
+C:\Users\ctamayo\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h(128): warning: In file included from...
+C:\Users\ctamayo\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f302x8.h(128): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+  FPU_IRQn                    = 81,      /*!< Floating point Interrupt                                          */
+                                  ^~
+1 warning generated.
+compiling system_stm32f3xx.c...
+assembling startup_stm32f302x8.s...
+linking...
+Program Size: Code=14880 RO-data=1124 RW-data=84 ZI-data=1720  
+".\Objects\uart-scratch.axf" - 0 Error(s), 15 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F3xx_DFP.2.2.2.pack
+                Keil.STM32F3xx_DFP.2.2.2
+                STMicroelectronics STM32F3 Series Device Support and Examples
+   * Component: Startup Version: 1.11.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_stm32
+  C:/Users/ctamayo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/ctamayo/AppData/Local/Arm/Packs/Keil/STM32F3xx_DFP/2.2.2/Drivers/CMSIS/Device/ST/STM32F3xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil.Standalone::Device:Startup:1.11.3
+      Include file:  Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32F3xx/Source/Templates/arm/startup_stm32f302x8.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F3xx/Source/Templates/system_stm32f3xx.c
+      Source file:   MDK/Device/Source/ARM/STM32F3xx_OPT.s
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

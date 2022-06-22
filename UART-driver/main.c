@@ -18,20 +18,10 @@ int main(void){
 		
 	printf("Hello there from main() :) ");
 
-		
-	
-	
-	
-	
-	RCC->AHBENR |= (1<<18);
-	GPIOB->MODER |= (1<<26);
-	
 	while(1){
-		for (int i=0; i<900000; i++){
-
-		}
-		GPIOB->ODR ^= (1<<13);
+		test_setup();	
 	}
+	
 	
 
 }

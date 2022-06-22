@@ -21,7 +21,7 @@ void USART2_Init(void){
 	RCC->AHBENR |= (1<<17);			/* enabling clock access to Port A (bit 17) */
  		
 	GPIOA->MODER |=  0x00A0;		/* Alternate Function Mode(10) for Port 2 and 3 */		
-	GPIOA->AFR[0] |= 0x7700;		
+	GPIOA->AFRL |= 0x7700;		
 	
 	/* Configure UART: */
 	USART2->BRR = 0x0341;			/* Baud rate = 9600 @ 8MHz */
@@ -65,7 +65,8 @@ int fputc(int c, FILE *f){
 	return USART2_write(c);
 }
 
-
+int n;
+char str[80];
 
 void test_setup(void){
 	printf("please enter a number:");
